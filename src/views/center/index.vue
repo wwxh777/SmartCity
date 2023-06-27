@@ -232,113 +232,113 @@ export default {
                 loca.animate.start();
                 
             //     // 以下为开场动画
-                this.map.on('complete', function () {
-                    var speed = 0.5;
+            //     this.map.on('complete', function () {
+            //         var speed = 0.5;
 
-                    // 下钻
-                    loca.viewControl.addAnimates([{
-                    pitch: {
-                        value: 0,
-                        control: [[0, 20], [1, 0]],
-                        timing: [0, 0, 0.8, 1],
-                        duration: 6000 / speed,
-                    },
-                    zoom: {
-                        value: 14,
-                        control: [[0, 12.8], [1, 15.9]],
-                        timing: [0, 0, 0.8, 1],
-                        duration: 6000 / speed,
-                    },
-                    rotation: {
-                        value: -30,
-                        control: [[0, 20], [1, -20]],
-                        timing: [0, 0, 0.8, 1],
-                        duration: 6000 / speed,
-                    },
-                    }], function () {
+            //         // 下钻
+            //         loca.viewControl.addAnimates([{
+            //         pitch: {
+            //             value: 0,
+            //             control: [[0, 20], [1, 0]],
+            //             timing: [0, 0, 0.8, 1],
+            //             duration: 6000 / speed,
+            //         },
+            //         zoom: {
+            //             value: 14,
+            //             control: [[0, 12.8], [1, 15.9]],
+            //             timing: [0, 0, 0.8, 1],
+            //             duration: 6000 / speed,
+            //         },
+            //         rotation: {
+            //             value: -30,
+            //             control: [[0, 20], [1, -20]],
+            //             timing: [0, 0, 0.8, 1],
+            //             duration: 6000 / speed,
+            //         },
+            //         }], function () {
                     
 
-                    loca.viewControl.addAnimates([
-                        // 寻迹
-                        {
-                        center: {
-                            value: [113.96852466239307,22.587935758826667],
-                            control: [[113.96851,22.597935], [113.96852,22.587935]],
-                            timing: [0.3, 0, 0.1, 1],
-                            duration: 3000 / speed,
-                        },
-                        zoom: {
-                            value: 18.5,
-                            control: [[0.3, 15], [1, 17]],
-                            timing: [0.3, 0, 0.7, 1],
-                            duration: 4000 / speed,
-                        },
-                        pitch: {
-                            value: 60,
-                            control: [[0.3, 0], [1, 50]],
-                            timing: [0.3, 0, 1, 1],
-                            duration: 3000 / speed,
-                        },
-                        rotation: {
-                            value: -90,
-                            control: [[0, -20], [1, -80]],
-                            timing: [0, 0, 1, 1],
-                            duration: 5000 / speed,
-                        },
-                        }, {
-                        // 环绕
-                        pitch: {
-                            value: 50,
-                            control: [[0, 40], [1, 50]],
-                            timing: [0.3, 0, 1, 1],
-                            duration: 3000 / speed,
-                        },
-                        rotation: {
-                            value: 260,
-                            control: [[0, -80], [1, 260]],
-                            timing: [0, 0, 0.7, 1],
-                            duration: 4000 / speed,
-                        },
-                        zoom: {
-                            value: 18,
-                            control: [[0.3, 16], [1, 17]],
-                            timing: [0.3, 0, 0.9, 1],
-                            duration: 5000 / speed,
-                        },
-                        }, {
-                        // 拉起
-                        center: {
-                            value: [114.095394,22.654437],
-                            control: [[113.96852,22.587935], [114.03394,22.754437]],
-                            timing: [0.5, 0.5, 0.5, 1],
-                            duration: 3000 / speed,
-                        },
-                        pitch: {
-                            value: 30,
-                            control: [[0, 0], [1, 100]],
-                            timing: [0.1, 0, 0.7, 1],
-                            duration: 4000 / speed,
-                        },
-                        rotation: {
-                            value: 360,
-                            control: [[0, 260], [1, 361]],
-                            timing: [0.3, 0, 0.7, 1],
-                            duration: 4000 / speed,
-                        },
-                        zoom: {
-                            value: 11.2,
-                            control: [[0, 17.5], [1, 13.8]],
-                            timing: [0.3, 0, 0.7, 1],
-                            duration: 5000 / speed,
-                        },
-                        }], function () {
-                        //pl.hide(1000);
-                        //setTimeout(animate, 2000);
-                        console.log('结束');
-                    });
-                });
-                });
-            // //以上为开场动画
+            //         loca.viewControl.addAnimates([
+            //             // 寻迹
+            //             {
+            //             center: {
+            //                 value: [113.96852466239307,22.587935758826667],
+            //                 control: [[113.96851,22.597935], [113.96852,22.587935]],
+            //                 timing: [0.3, 0, 0.1, 1],
+            //                 duration: 3000 / speed,
+            //             },
+            //             zoom: {
+            //                 value: 18.5,
+            //                 control: [[0.3, 15], [1, 17]],
+            //                 timing: [0.3, 0, 0.7, 1],
+            //                 duration: 4000 / speed,
+            //             },
+            //             pitch: {
+            //                 value: 60,
+            //                 control: [[0.3, 0], [1, 50]],
+            //                 timing: [0.3, 0, 1, 1],
+            //                 duration: 3000 / speed,
+            //             },
+            //             rotation: {
+            //                 value: -90,
+            //                 control: [[0, -20], [1, -80]],
+            //                 timing: [0, 0, 1, 1],
+            //                 duration: 5000 / speed,
+            //             },
+            //             }, {
+            //             // 环绕
+            //             pitch: {
+            //                 value: 50,
+            //                 control: [[0, 40], [1, 50]],
+            //                 timing: [0.3, 0, 1, 1],
+            //                 duration: 3000 / speed,
+            //             },
+            //             rotation: {
+            //                 value: 260,
+            //                 control: [[0, -80], [1, 260]],
+            //                 timing: [0, 0, 0.7, 1],
+            //                 duration: 4000 / speed,
+            //             },
+            //             zoom: {
+            //                 value: 18,
+            //                 control: [[0.3, 16], [1, 17]],
+            //                 timing: [0.3, 0, 0.9, 1],
+            //                 duration: 5000 / speed,
+            //             },
+            //             }, {
+            //             // 拉起
+            //             center: {
+            //                 value: [114.095394,22.654437],
+            //                 control: [[113.96852,22.587935], [114.03394,22.754437]],
+            //                 timing: [0.5, 0.5, 0.5, 1],
+            //                 duration: 3000 / speed,
+            //             },
+            //             pitch: {
+            //                 value: 30,
+            //                 control: [[0, 0], [1, 100]],
+            //                 timing: [0.1, 0, 0.7, 1],
+            //                 duration: 4000 / speed,
+            //             },
+            //             rotation: {
+            //                 value: 360,
+            //                 control: [[0, 260], [1, 361]],
+            //                 timing: [0.3, 0, 0.7, 1],
+            //                 duration: 4000 / speed,
+            //             },
+            //             zoom: {
+            //                 value: 11.2,
+            //                 control: [[0, 17.5], [1, 13.8]],
+            //                 timing: [0.3, 0, 0.7, 1],
+            //                 duration: 5000 / speed,
+            //             },
+            //             }], function () {
+            //             //pl.hide(1000);
+            //             //setTimeout(animate, 2000);
+            //             console.log('结束');
+            //         });
+            //     });
+            //     });
+            // // //以上为开场动画
             
             }).catch(e=>{
                 console.log(e);
@@ -357,14 +357,14 @@ export default {
 </script>
 <style scope>
     .home_div{
-        height: 970px;
+        height: 830px;
         width: 100%;
         padding: 0px;
         margin: 0px;
         position: relative;
     }
     #container{
-        height: 970px;
+        height: 830px;
         width: 100%;
         padding: 0px;
         margin: 0px;
